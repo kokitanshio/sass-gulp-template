@@ -21,20 +21,22 @@ const webp = require('gulp-webp'); //gulp-webpでwebp変換
 
 // 入出力するフォルダを指定
 const srcBase = './src';
+const srcBaseAssets = './src/assets';
 const distBase = './dist';
+const distBaseAssets = './dist/assets';
 
 const srcPath = {
   'scss': srcBase + '/scss/**/*.scss',
   'html': srcBase + '/**/*.html',
-  'img': srcBase + '/images/**/*.{png,jpg,jpeg}',
-  'js': srcBase + '/js/*.js',
+  'img': srcBaseAssets + '/images/**/*.{png,jpg,jpeg}',
+  'js': srcBaseAssets + '/js/*.js',
 };
 
 const distPath = {
-  'css': distBase + '/css/',
+  'css': distBaseAssets + '/css/',
   'html': distBase + '/',
-  'img': distBase + '/images/',
-  'js': distBase + '/js/'
+  'img': distBaseAssets + '/images/',
+  'js': distBaseAssets + '/js/'
 };
 
 
