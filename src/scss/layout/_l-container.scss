@@ -1,0 +1,26 @@
+@use "../global/" as global;
+
+@mixin container($width, $padding){
+  width: 100%;
+  max-width: calc($width + $padding * 2);
+  padding: 0 $padding;
+  margin: 0 auto;
+  position: relative;
+
+  @include global.mq(){
+    padding: 0 global.$padding-sp;
+  }
+
+}
+
+.l-container{
+  @include container(global.$m-inner, global.$padding);
+}
+
+.l-container--l{
+  @include container(global.$l-inner, global.$padding)
+}
+
+.l-container--s{
+  @include container(global.$s-inner, global.$s-padding)
+}
