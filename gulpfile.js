@@ -28,7 +28,7 @@ const distBaseAssets = './dist/assets';
 const srcPath = {
   'scss': srcBase + '/scss/**/*.scss',
   'html': srcBase + '/**/*.html',
-  'img': srcBaseAssets + '/images/**/*.{png,jpg,jpeg}',
+  'img': srcBaseAssets + '/images/**/*.{png,jpg,jpeg,svg}',
   'js': srcBaseAssets + '/js/*.js',
 };
 
