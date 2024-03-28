@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/kokitanshio/sass-gulp-template#readme",
   "devDependencies": {
     "browser-sync": "^2.29.3",
+    "css-declaration-sorter": "^7.2.0",
     "css-mqpacker": "^7.0.0",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
@@ -31,6 +33,7 @@
     "gulp-postcss": "^9.0.1",
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.1"
+    "imagemin-pngquant": "^9.0.1",
+    "prettier": "^3.2.5"
   }
 }
